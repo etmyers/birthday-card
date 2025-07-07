@@ -9,9 +9,27 @@ function nextScreen() {
   nextScreen.classList.remove("hidden");
 }
 
-function showSurprise() {
-  document.getElementById('screen4').classList.add("hidden");
-  document.getElementById('screen5').classList.remove("hidden");
+function goNo() {
+  document.getElementById('screen1').classList.add("hidden");
+  document.getElementById('screen-no').classList.remove("hidden");
+}
 
-  // Optional: Add confetti or play music
+function goNo2() {
+  document.getElementById('screen2').classList.add("hidden");
+  document.getElementById('screen-no2').classList.remove("hidden");
+}
+
+function restart() {
+  document.getElementById('screen-no').classList.add("hidden");
+  document.getElementById('screen-no2').classList.add("hidden");
+  document.getElementById('screen1').classList.remove("hidden");
+  current = 1;
+}
+
+function openCard() {
+  document.getElementById('modal').classList.remove('hidden');
+}
+
+function closeCard() {
+  document.getElementById('modal').classList.add('hidden');
 }

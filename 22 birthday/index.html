@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="card-container">
+    <div class="card" id="screen1">
+      <h1>🎉 Happy Birthday, My Love! 🎂</h1>
+      <p>Today’s all about YOU. Ready for your surprise?</p>
+      <button onclick="nextScreen()">Next</button>
+    </div>
+
+    <div class="card hidden" id="screen2">
+      <h1>💌 I just want to say...</h1>
+      <p>You make every day brighter. I’m so lucky to have you. ❤️</p>
+      <button onclick="nextScreen()">Next</button>
+    </div>
+
+    <div class="card hidden" id="screen3">
+      <h1>🎁 Your gift?</h1>
+      <p>This little site is just a piece of how much I care. (And your real gift is coming too 😉)</p>
+      <button onclick="nextScreen()">Final</button>
+    </div>
+
+    <div class="card hidden" id="screen4">
+      <h1>💖 I Love You!</h1>
+      <p>Happy Birthday again! Click below for a surprise! 🎊</p>
+      <button onclick="showSurprise()">Surprise</button>
+    </div>
+
+    <div class="card hidden" id="screen5">
+      <h1>🌟 Ta-da!</h1>
+      <img src="your-gif.gif" alt="Cute gif" />
+      <p>You’re the best. Forever and always. 💘</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
